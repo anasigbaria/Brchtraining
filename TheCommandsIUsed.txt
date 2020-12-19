@@ -1,0 +1,57 @@
+tasks:
+ #1:
+//creating the repo
+
+cd localRepo/
+git init
+ git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/anasigbaria/Brchtraining.git
+git push -u origin main
+
+// creating the greeting.txt file
+
+vim greeting.txt
+
+#2:
+
+git checkout -b greeting
+
+#3:
+
+ vim greeting.txt
+
+#4:
+
+git add greeting.txt
+
+#5:
+
+git commit -m"5th point of the HW"
+
+#6:
+
+git checkout main
+
+#7:
+
+ vim README.md
+
+#8:
+
+git add README.md
+git commit -m"8th point in of the HW"
+
+#9:
+
+git log --oneline --graph --all > ansewr9.txt
+vim answer9.txt
+
+#10:
+
+git diff main greeting
+
+#11:
+
+git merge main greeting
